@@ -1,0 +1,15 @@
+# Create Solution folder and solution file
+mkdir WebSocketConsoleApp && cd WebSocketConsoleApp
+dotnet new sln -n WebSocketConsoleApp
+
+# Simple Server app (one client at the time)
+dotnet new console -n SimpleServerApp
+dotnet sln add ServerApp/ServerApp.csproj
+
+# Server app (multiple clients at the time)
+dotnet new console -n ServerApp
+dotnet sln add ServerApp/ServerApp.csproj
+
+# Client app
+dotnet new console -n ClientApp
+dotnet sln add ClientApp/ClientApp.csproj

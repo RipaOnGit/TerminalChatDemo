@@ -1,0 +1,12 @@
+In VS Code:
+- Open the folder WebSocketConsoleApp
+- Open an integrated terminal
+
+# Run simple server app
+dotnet run --project SimpleServerApp
+
+# Run client app
+dotnet run --project ClientApp
+
+# Run multi client supported server app
+dotnet run --project ServerApp
